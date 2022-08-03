@@ -1,0 +1,34 @@
+.selection__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.selection__item {
+  margin-bottom: 20px;
+  padding: 30px 33px 20px 20px;
+  background-color: $very-light-gray;
+}
+
+.selection__title {
+  width: 24px;
+  height: 37px;
+  margin: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+.selection__description {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 38px;
+}
+
+.selection__catalog {
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
