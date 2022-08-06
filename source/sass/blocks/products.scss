@@ -1,0 +1,32 @@
+.products {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+}
+
+.products__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.products__card {
+  margin-bottom: 19px;
+  padding: 11px 0 14px 0;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.products__card :last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,39 @@
+.additional-products__wrapper {
+  padding-top: 25px;
+  outline: 2px solid yellow;
+  outline-offset: -2px;
+}
+
+.additional-products__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-products__item {
+  padding: 13px 0 19px 0;
+}
+
+.additional-card__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $very-dark-grey;
+}
+
+.additional-card__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $medium-grey;
+}

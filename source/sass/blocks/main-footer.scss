@@ -1,0 +1,17 @@
+.main-footer {
+  background-color: $very-light-gray;
+}
+
+.main-footer__logo {
+  display: block;
+  padding: 39px 0 32px 0;
+}
+
+.main-footer__copyright {
+  padding: 22px 0;
+}
+
+.copyright__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

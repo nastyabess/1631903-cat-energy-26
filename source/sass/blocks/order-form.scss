@@ -1,0 +1,47 @@
+.order-form__group {
+  padding: 22px 0;
+}
+
+.field__lable {
+  font-size: 16px;
+  line-height: 18px;
+  color: $medium-grey;
+  text-transform: uppercase;
+}
+
+.field__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $medium-grey;
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.control__label-radio {
+  color: $very-dark-grey;
+}
+
+.order-form__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment-field {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $medium-grey;
+  padding: 12px;
+}
+
+.order-form__legend {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -9,12 +9,14 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo-1.svg" width="33" height="38" alt="Функциональное питание для котов Cat Energy.">
-    </a>
-    <a class="main-header__logo" href="index.html">
-      <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
+    <div class="main-header__logo logo container">
+      <a class="logo__icon" href="index.html">
+        <img class="main-header__logo-image" src="img/logo-1.svg" width="33" height="38" alt="Функциональное питание для котов Cat Energy.">
+      </a>
+      <a class="logo__text" href="index.html">
+        <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+    </div>
     <nav class="main-header__nav navigation">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -35,7 +37,7 @@
     </nav>
   </header>
   <main class="form">
-    <section class="selection-order">
+    <section class="selection-order container">
       <h1 class="selection-order__title">Подбор программы</h1>
       <p class="selection-order__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection-order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -61,21 +63,21 @@
               <label class="control radio">
                 <input class="visually-hidden control__input" type="radio" name="weight-loss" value="weight-loss" checked>
                 <span class="control__mark"></span>
-                <span class="control__label">похудение</span>
+                <span class="control__label control__label-radio">похудение</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="control radio">
                 <input class="visually-hidden control__input" type="radio" name="mass-gain" value="mass-gain">
                 <span class="control__mark"></span>
-                <span class="control__label">Набор массы</span>
+                <span class="control__label control__label-radio">Набор массы</span>
               </label>
             </li>
             <li class="order-form__item">
               <label class="control radio">
                 <input class="visually-hidden control__input" type="radio" name="advice" value="advice">
                 <span class="control__mark"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                <span class="control__label control__label-radio">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -93,7 +95,7 @@
         </fieldset>
         <fieldset class="order-form__group">
           <legend class="order-form__title">Комментарий</legend>
-          <textarea class="order-form__field-group" rows="5" cols="33" name="text" id="comment-text" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea class="order-form__field-group comment-field" rows="5" cols="37" name="text" id="comment-text" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
         <fieldset class="order-form__group">
           <legend class="order-form__title">Дополнительно</legend>
@@ -128,21 +130,21 @@
             </li>
           </ul>
         </fieldset>
-        <button class="order-form__button button" type="submit">отправить заявку</button>
+        <button class="order-form__button button button-primary" type="submit">отправить заявку</button>
         <small class="order-form__legend">* — Обязательные поля</small>
       </form>
     </section>
-    <section class="cooperation">
+    <section class="cooperation cooperation-catalog">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__wrapper">
+      <div class="cooperation__wrapper container">
         <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
         <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="cooperation__map" src="img/map.png" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
-      <img class="cooperation__map" src="img/map.png" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container">
       <a class="main-footer__logo" href="index.html">
         <img src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy.">
       </a>

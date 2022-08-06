@@ -4,10 +4,18 @@
   list-style-type: none;
 }
 
+.navigation__item {
+  text-align: center;
+}
+
 .navigation__link {
+  display: block;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 24px;
 }
