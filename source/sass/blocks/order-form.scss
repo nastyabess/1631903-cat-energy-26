@@ -1,0 +1,84 @@
+.order-form__group {
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
+  border: none;
+}
+
+.order-form__group:last-of-type {
+  margin-bottom: 34px;
+}
+
+.order-form__group-user {
+  margin-bottom: 24px;
+}
+
+.order-form__field-group {
+  margin: 0;
+}
+
+.order-form__field-group:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.order-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.order-form__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.order-form__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.field__lable {
+  font-size: 16px;
+  line-height: 18px;
+  color: $medium-grey;
+  text-transform: uppercase;
+}
+
+.field__input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $medium-grey;
+  padding: 13px 15px;
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.control__label-radio {
+  color: $very-dark-grey;
+}
+
+.comment-field {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $medium-grey;
+  padding: 12px;
+  border: 1px solid $platinum;
+}
+
+.order-form__legend {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-form__button {
+  margin-bottom: 21px;
+}

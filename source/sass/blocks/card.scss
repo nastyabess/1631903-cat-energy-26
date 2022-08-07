@@ -1,0 +1,27 @@
+.card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $dark-grey;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.card__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $medium-grey;
+}
+
+.card__value {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $medium-grey;
+}
+
+.card-more__button {
+  color: $medium-grey;
+  background-color: $very-light-gray;
+}

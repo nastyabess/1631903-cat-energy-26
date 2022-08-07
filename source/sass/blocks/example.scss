@@ -1,0 +1,54 @@
+.example {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: $silver-gray;
+}
+
+.example__title-intro {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $black;
+}
+
+.example__description-intro {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $medium-grey;
+}
+
+.example__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__description-item {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.food-costs {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
