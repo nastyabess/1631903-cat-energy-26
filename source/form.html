@@ -17,7 +17,7 @@
         <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
       </a>
     </div>
-    <nav class="main-header__nav navigation">
+    <nav class="main-header__nav navigation container">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -38,8 +38,8 @@
   </header>
   <main class="form">
     <section class="selection-order container">
-      <h1 class="selection-order__title">Подбор программы</h1>
-      <p class="selection-order__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="selection-order__title selection-order__title-intro">Подбор программы</h1>
+      <p class="selection-order__text selection-order__text-intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection-order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="order-form__group">
           <legend class="visually-hidden">Информация о питомце</legend>
@@ -82,7 +82,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__group">
+        <fieldset class="order-form__group order-form__group-user">
           <legend class="order-form__title">Контактные данные (владельца кота)</legend>
           <p class="order-form__field-group field">
             <label class="field__lable" for="user-email">E-mail:*</label>
@@ -93,9 +93,9 @@
             <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
           </p>
         </fieldset>
-        <fieldset class="order-form__group">
+        <fieldset class="order-form__group order-form__group-user">
           <legend class="order-form__title">Комментарий</legend>
-          <textarea class="order-form__field-group comment-field" rows="5" cols="37" name="text" id="comment-text" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea class="order-form__field-group comment-field" rows="7" cols="37" name="text" id="comment-text" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
         <fieldset class="order-form__group">
           <legend class="order-form__title">Дополнительно</legend>
@@ -136,10 +136,12 @@
     </section>
     <section class="cooperation cooperation-catalog">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__wrapper container">
-        <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="cooperation__map" src="img/map.png" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+      <div class="cooperation__wrapper">
+        <div class="cooperation__invite  container">
+          <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="cooperation__map" src="img/map.png" width="320" height="362" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
     </section>
   </main>
@@ -151,18 +153,23 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Ютубе.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме.</span></a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link copyright__link-wrapper" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <img class="copyright__logo" src="img/html-academy.svg" width="27" height="34" alt="HTML Academy.">
         </a>
