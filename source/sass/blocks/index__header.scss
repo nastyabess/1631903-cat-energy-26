@@ -1,9 +1,36 @@
+.index__header {
+  min-height: 585px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 302px;
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-licks.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+  }
+}
+
 .index__hero {
-  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-licks.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
   text-align: center;
-  padding: 27px 15px 154px 15px;
+  margin-bottom: 302px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    padding-top: 62px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+  }
 }
 
 .index__title {
@@ -12,17 +39,35 @@
   font-weight: 400;
   color: $white;
   margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
 }
 
-.index__intro {
+.index__text {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: $white;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    color: $black;
+  }
 }
 
-.index__button-selection {
+.index__button {
+  width: 280px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }

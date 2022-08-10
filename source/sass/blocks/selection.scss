@@ -1,20 +1,38 @@
 .selection {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .selection__list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .selection__item {
   padding: 30px 33px 20px 20px;
   background-color: $very-light-gray;
-}
 
-.selection__item:not(:last-child) {
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    padding: 77px 255px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 51px 55px 52px;
+  }
 }
 
 .selection__title {

@@ -1,3 +1,32 @@
 .main-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/big-cat-licks.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
 }
+
+.main-header__logo {
+  height: 65px;
+}
+

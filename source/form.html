@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,57 +42,61 @@
       <h1 class="selection-order__title selection-order__title-intro">Подбор программы</h1>
       <p class="selection-order__text selection-order__text-intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection-order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="order-form__group">
-          <legend class="visually-hidden">Информация о питомце</legend>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="pet-name">ИМЯ:*</label>
-            <input class="field__input" type="text" id="pet-name" name="pet-name" placeholder="барсик" required>
-          </p>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="pet-weight">Вес (кг):*</label>
-            <input class="field__input" type="number" id="pet-weight" name="pet-weight" placeholder="7" required>
-          </p>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="pet-age">Возраст (лет):</label>
-            <input class="field__input" type="number" id="pet-age" name="pet-age" placeholder="7">
-          </p>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="visually-hidden">Выбор цели программы</legend>
-          <ul class="control-container order-form__list order-form__radio">
-            <li class="order-form__item">
-              <label class="control radio">
-                <input class="visually-hidden control__input" type="radio" name="weight-loss" value="weight-loss" checked>
-                <span class="control__mark"></span>
-                <span class="control__label control__label-radio">похудение</span>
-              </label>
-            </li>
-            <li class="order-form__item">
-              <label class="control radio">
-                <input class="visually-hidden control__input" type="radio" name="mass-gain" value="mass-gain">
-                <span class="control__mark"></span>
-                <span class="control__label control__label-radio">Набор массы</span>
-              </label>
-            </li>
-            <li class="order-form__item">
-              <label class="control radio">
-                <input class="visually-hidden control__input" type="radio" name="advice" value="advice">
-                <span class="control__mark"></span>
-                <span class="control__label control__label-radio">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="order-form__wrapper">
+          <fieldset class="order-form__group">
+            <legend class="visually-hidden">Информация о питомце</legend>
+            <p class="order-form__field-group field">
+              <label class="field__lable" for="pet-name">ИМЯ:*</label>
+              <input class="field__input" type="text" id="pet-name" name="pet-name" placeholder="барсик" required>
+            </p>
+            <p class="order-form__field-group field">
+              <label class="field__lable" for="pet-weight">Вес (кг):*</label>
+              <input class="field__input" type="number" id="pet-weight" name="pet-weight" placeholder="7" required>
+            </p>
+            <p class="order-form__field-group field">
+              <label class="field__lable" for="pet-age">Возраст (лет):</label>
+              <input class="field__input" type="number" id="pet-age" name="pet-age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="order-form__group">
+            <legend class="visually-hidden">Выбор цели программы</legend>
+            <ul class="control-container order-form__list order-form__radio">
+              <li class="order-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="goal" value="weight-loss" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label control__label-radio">похудение</span>
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="goal" value="mass-gain">
+                  <span class="control__mark"></span>
+                  <span class="control__label control__label-radio">Набор массы</span>
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="goal" value="advice">
+                  <span class="control__mark"></span>
+                  <span class="control__label control__label-radio">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="order-form__group order-form__group-user">
           <legend class="order-form__title">Контактные данные (владельца кота)</legend>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="user-email">E-mail:*</label>
-            <input class="field__input" type="email" id="user-email" name="user-email" placeholder="kuklachev@gmail.com" required>
-          </p>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="user-phone">Телефон:*</label>
-            <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
-          </p>
+            <div class="order-form__contacts">
+              <p class="order-form__field-group field">
+                <label class="field__lable" for="user-email">E-mail:*</label>
+                <input class="field__input" type="email" id="user-email" name="user-email" placeholder="kuklachev@gmail.com" required>
+              </p>
+              <p class="order-form__field-group field">
+                <label class="field__lable" for="user-phone">Телефон:*</label>
+                <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
+              </p>
+            </div>
         </fieldset>
         <fieldset class="order-form__group order-form__group-user">
           <legend class="order-form__title">Комментарий</legend>
