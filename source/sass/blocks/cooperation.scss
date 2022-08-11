@@ -1,9 +1,13 @@
-.cooperation {
-  position: relative;
-}
-
 .cooperation-catalog {
   background-color: $very-light-gray;
+}
+
+.cooperation-form {
+  background-color: $very-light-gray;
+}
+
+.cooperation__wrapper {
+  position: relative;
 }
 
 .cooperation__invite {
@@ -17,8 +21,8 @@
     padding: 58px 80px;
     background-color: $white;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 95px;
+    left: 0;
   }
 }
 

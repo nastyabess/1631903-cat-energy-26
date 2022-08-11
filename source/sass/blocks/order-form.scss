@@ -81,6 +81,13 @@
   padding: 13px 15px;
 }
 
+.order-form__checkbox {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .control {
   position: relative;
   display: block;

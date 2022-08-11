@@ -1,4 +1,4 @@
-.products {
+.products__wrapper {
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,6 @@
 
 .products__card {
   padding: 11px 0 14px 0;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  // outline: 2px solid red;
+  // outline-offset: -2px;
 }
-
