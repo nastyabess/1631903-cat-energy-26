@@ -1,5 +1,11 @@
 .additional-products {
   padding-top: 25px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 245px;
+    column-gap: 79px;
+  }
 }
 
 .additional-products__title {

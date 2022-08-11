@@ -3,95 +3,100 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo logo container">
-      <a class="logo__icon" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-1.svg" width="33" height="38" alt="Функциональное питание для котов Cat Energy.">
-      </a>
-      <a class="logo__text" href="index.html">
-        <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
-      </a>
-    </div>
-    <nav class="main-header__nav navigation container">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list site-list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+    <div class="main-header__wrapper container">
+      <div class="main-header__logo logo">
+        <a class="logo__icon" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-1.svg" width="33" height="38" alt="Функциональное питание для котов Cat Energy.">
+        </a>
+        <a class="logo__text" href="index.html">
+          <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
+        </a>
       </div>
-    </nav>
+      <nav class="main-header__nav navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <ul class="navigation__list site-list">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <main class="form">
     <section class="selection-order container">
       <h1 class="selection-order__title selection-order__title-intro">Подбор программы</h1>
       <p class="selection-order__text selection-order__text-intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection-order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="order-form__group">
-          <legend class="visually-hidden">Информация о питомце</legend>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="pet-name">ИМЯ:*</label>
-            <input class="field__input" type="text" id="pet-name" name="pet-name" placeholder="барсик" required>
-          </p>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="pet-weight">Вес (кг):*</label>
-            <input class="field__input" type="number" id="pet-weight" name="pet-weight" placeholder="7" required>
-          </p>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="pet-age">Возраст (лет):</label>
-            <input class="field__input" type="number" id="pet-age" name="pet-age" placeholder="7">
-          </p>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="visually-hidden">Выбор цели программы</legend>
-          <ul class="control-container order-form__list order-form__radio">
-            <li class="order-form__item">
-              <label class="control radio">
-                <input class="visually-hidden control__input" type="radio" name="weight-loss" value="weight-loss" checked>
-                <span class="control__mark"></span>
-                <span class="control__label control__label-radio">похудение</span>
-              </label>
-            </li>
-            <li class="order-form__item">
-              <label class="control radio">
-                <input class="visually-hidden control__input" type="radio" name="mass-gain" value="mass-gain">
-                <span class="control__mark"></span>
-                <span class="control__label control__label-radio">Набор массы</span>
-              </label>
-            </li>
-            <li class="order-form__item">
-              <label class="control radio">
-                <input class="visually-hidden control__input" type="radio" name="advice" value="advice">
-                <span class="control__mark"></span>
-                <span class="control__label control__label-radio">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="order-form__wrapper">
+          <fieldset class="order-form__group">
+            <legend class="visually-hidden">Информация о питомце</legend>
+            <p class="order-form__field-group field">
+              <label class="field__lable" for="pet-name">ИМЯ:*</label>
+              <input class="field__input" type="text" id="pet-name" name="pet-name" placeholder="барсик" required>
+            </p>
+            <p class="order-form__field-group field">
+              <label class="field__lable" for="pet-weight">Вес (кг):*</label>
+              <input class="field__input" type="number" id="pet-weight" name="pet-weight" placeholder="7" required>
+            </p>
+            <p class="order-form__field-group field">
+              <label class="field__lable" for="pet-age">Возраст (лет):</label>
+              <input class="field__input" type="number" id="pet-age" name="pet-age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="order-form__group">
+            <legend class="visually-hidden">Выбор цели программы</legend>
+            <ul class="control-container order-form__list order-form__radio">
+              <li class="order-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="goal" value="weight-loss" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label control__label-radio">похудение</span>
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="goal" value="mass-gain">
+                  <span class="control__mark"></span>
+                  <span class="control__label control__label-radio">Набор массы</span>
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="goal" value="advice">
+                  <span class="control__mark"></span>
+                  <span class="control__label control__label-radio">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="order-form__group order-form__group-user">
           <legend class="order-form__title">Контактные данные (владельца кота)</legend>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="user-email">E-mail:*</label>
-            <input class="field__input" type="email" id="user-email" name="user-email" placeholder="kuklachev@gmail.com" required>
-          </p>
-          <p class="order-form__field-group field">
-            <label class="field__lable" for="user-phone">Телефон:*</label>
-            <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
-          </p>
+            <div class="order-form__contacts">
+              <p class="order-form__field-group field">
+                <label class="field__lable" for="user-email">E-mail:*</label>
+                <input class="field__input" type="email" id="user-email" name="user-email" placeholder="kuklachev@gmail.com" required>
+              </p>
+              <p class="order-form__field-group field">
+                <label class="field__lable" for="user-phone">Телефон:*</label>
+                <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="8 (960) 900-60-90" required>
+              </p>
+            </div>
         </fieldset>
         <fieldset class="order-form__group order-form__group-user">
           <legend class="order-form__title">Комментарий</legend>
@@ -134,15 +139,15 @@
         <small class="order-form__legend">* — Обязательные поля</small>
       </form>
     </section>
-    <section class="cooperation cooperation-catalog">
+    <section class="cooperation cooperation-form">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__wrapper">
-        <div class="cooperation__invite  container">
+      <div class="cooperation__wrapper container">
+        <div class="cooperation__invite">
           <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
           <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="cooperation__map" src="img/map.png" width="320" height="362" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
+      <img class="cooperation__map" src="img/map.png" width="320" height="362" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
     </section>
   </main>
   <footer class="main-footer">

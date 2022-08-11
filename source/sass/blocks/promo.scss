@@ -1,12 +1,8 @@
-.promo {
-  padding: 35px 0;
-}
-
 .promo__wrapper {
-  padding: 186px 60px 43px;
+  min-height: 290px;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-in-backpack.png");
-
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -17,8 +13,4 @@
   text-align: center;
   color: $white;
   margin: 0;
-}
-
-.cooperation__map {
-  margin: 0 auto;
 }

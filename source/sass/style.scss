@@ -1,6 +1,7 @@
-@import "components/fonts.scss";
-@import "variables/colors.scss";
+@import "fonts.scss";
+@import "colors.scss";
 @import "utits.scss";
+@import "variables.scss";
 @import "blocks/container.scss";
 @import "blocks/main-header";
 @import "blocks/navigation";
@@ -40,5 +41,5 @@ body {
 img {
   display: block;
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }

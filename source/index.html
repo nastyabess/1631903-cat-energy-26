@@ -3,53 +3,53 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__logo logo container">
-    <a class="logo__icon" href="index.html">
-      <img class="main-header__logo-image" src="img/logo-1.svg" width="33" height="38" alt="Функциональное питание для котов Cat Energy.">
-    </a>
-    <a class="logo__text" href="index.html">
-      <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
-  </div>
-    <nav class="main-header__nav navigation container">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list site-list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+  <header class="main-header main-header--index">
+    <div class="main-header__wrapper main-header__wrapper--index container">
+      <div class="main-header__logo logo">
+        <a class="logo__icon" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-1.svg" width="33" height="38" alt="Функциональное питание для котов Cat Energy.">
+        </a>
+        <a class="logo__text" href="index.html">
+          <img src="img/header-logo.svg" width="101" height="18" alt="Cat Energy.">
+        </a>
       </div>
-    </nav>
+      <nav class="main-header__nav navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <ul class="navigation__list site-list">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link navigation__link--index" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--index" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--index" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <main class="index">
     <header class="index__header">
       <div class="index__wrapper container">
         <div class="index__hero">
-        <h1 class="index__title">Функциональное питание для котов</h1>
-        <p class="index__intro">Занялся собой? Займись котом!</p>
-      </div>
-        <img src="img/hero-1.png" width="280" height="270" alt="">
-        <a class="index__button-selection button button-primary" href="form.html">Подобрать программу</a>
+          <h1 class="index__title">Функциональное питание для котов</h1>
+          <p class="index__text">Занялся собой? Займись котом!</p>
+        </div>
+        <a class="index__button button button-primary" href="form.html">Подобрать программу</a>
       </div>
     </header>
-    <section class="selection container">
+    <section class="selection">
       <h2 class="visually-hidden">Подбор программы питания</h2>
-      <div class="selection__wrapper">
+      <div class="selection__wrapper container">
         <ul class="selection__list">
           <li class="selection__item selection__item--weight-loss">
             <h3 class="selection__title">Похудение</h3>
@@ -86,35 +86,37 @@
     <section class="example">
       <div class="example__wrapper container">
         <h2 class="example__title example__title-intro">Живой пример</h2>
-        <p class="example__description example__description-intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__number">5 КГ</dt>
-            <dd class="example__description example__description-item">снижение веса</dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__number">60 ДНЕЙ</dt>
-            <dd class="example__description example__description-item">затрачено времени</dd>
-          </div>
-        </dl>
-        <dl class="example__additionally food-costs">
-          <div class="food-costs__item">
-            <dt class="food-costs__number">15 000 РУБ.</dt>
-            <dd class="food-costs__description">Затраты на питание:</dd>
-          </div>
-        </dl>
-        <div class="example__slider">
-          <img src="img/example-before.png" alt="Пример до">
-          <img src="img/example-after.png" alt="Пример после">
-          <div class="example__range range">
-            <div class="range__scale">
-              <p class="range__meaning">было</p>
-              <div class="range__bar">
-                <button class="range__toggle" type="button">
-                  <span class="visually-hidden">Посмотреть разницу</span>
-                </button>
+        <div class="example__info">
+          <div class="example__facts">
+            <p class="example__description example__description-intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__number">5 КГ</dt>
+                <dd class="example__description example__description-item">снижение веса</dd>
               </div>
-              <p class="range__meaning">стало</p>
+              <div class="example__item">
+                <dt class="example__number">60 ДНЕЙ</dt>
+                <dd class="example__description example__description-item">затрачено времени</dd>
+              </div>
+            </dl>
+            <dl class="example__additionally food-costs">
+              <div class="food-costs__item">
+                <dt class="food-costs__number">15 000 РУБ.</dt>
+                <dd class="food-costs__description">Затраты на питание:</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="example__slider">
+            <img src="img/example-before.png" alt="Пример до">
+            <img src="img/example-after.png" alt="Пример после">
+            <div class="example__range range">
+              <div class="range__scale">
+                <div class="range__bar">
+                  <button class="range__toggle" type="button">
+                  <span class="visually-hidden">Посмотреть разницу</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -122,13 +124,13 @@
     </section>
     <section class="cooperation">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__wrapper">
-        <div class="cooperation__invite container">
+      <div class="cooperation__wrapper container">
+        <div class="cooperation__invite">
           <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
           <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="cooperation__map" src="img/map.png" width="320" height="362" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </div>
+      <img class="cooperation__map" src="img/map.png" width="320" height="362" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
     </section>
   </main>
   <footer class="main-footer">

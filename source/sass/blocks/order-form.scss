@@ -1,3 +1,11 @@
+.order-form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .order-form__group {
   margin: 0;
   margin-bottom: 47px;
@@ -11,6 +19,21 @@
 
 .order-form__group-user {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+}
+
+.order-form__contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .order-form__field-group {
@@ -27,8 +50,12 @@
   list-style-type: none;
 }
 
-.order-form__item:not(:last-child) {
-  margin-bottom: 13px;
+.order-form__item {
+  padding: 6px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }
 
 .order-form__title {
@@ -42,6 +69,7 @@
   line-height: 18px;
   color: $medium-grey;
   text-transform: uppercase;
+  margin-right: 14px;
 }
 
 .field__input {
@@ -53,14 +81,60 @@
   padding: 13px 15px;
 }
 
-.control__label {
+.order-form__checkbox {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.control {
+  position: relative;
+  display: block;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 45px;
 }
 
 .control__label-radio {
   color: $very-dark-grey;
+}
+
+.control__mark {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $green;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/check-mark.svg");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .comment-field {
