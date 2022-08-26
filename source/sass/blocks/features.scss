@@ -71,7 +71,7 @@
   &--useful::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/leaf-icon.svg");
+    background-image: url("../img/leaf-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -79,7 +79,7 @@
   &--simplicity::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/water-icon.svg");
+    background-image: url("../img/water-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -87,7 +87,7 @@
   &--meal::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/eat-icon.svg");
+    background-image: url("../img/eat-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -95,7 +95,7 @@
   &--time::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/time-icon.svg");
+    background-image: url("../img/time-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
