@@ -54,7 +54,7 @@
     position: absolute;
     width: 50px;
     height: 53px;
-    background-image: url("../../img/black-cat.svg");
+    background-image: url("../img/black-cat.svg");
     background-repeat: no-repeat;
     top: 24px;
     left: 22px;
@@ -62,7 +62,7 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 211px;
-      background-image: url("../../img/black-cat-tablet.svg");
+      background-image: url("../img/black-cat-tablet.svg");
       top: 50%;
       left: 446px;
       transform: translateY(-50%);
@@ -71,7 +71,7 @@
     @media (min-width: $desktop-width) {
       width: 100px;
       height: 106px;
-      background-image: url("../../img/black-cat-desktop.svg");
+      background-image: url("../img/black-cat-desktop.svg");
       top: 41px;
       left: 52px;
       transform: none;
@@ -83,7 +83,7 @@
     position: absolute;
     width: 67px;
     height: 50px;
-    background-image: url("../../img/black-panther.svg");
+    background-image: url("../img/black-panther.svg");
     background-repeat: no-repeat;
     top: 24px;
     left: 13px;
@@ -91,7 +91,7 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
-      background-image: url("../../img/black-panther-tablet.svg");
+      background-image: url("../img/black-panther-tablet.svg");
       top: 50%;
       left: 412px;
       transform: translateY(-50%);
@@ -100,7 +100,7 @@
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 100px;
-      background-image: url("../../img/black-panther-desktop.svg");
+      background-image: url("../img/black-panther-desktop.svg");
       top: 47px;
       left: 33px;
       transform: none;
