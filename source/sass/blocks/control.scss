@@ -1,0 +1,76 @@
+.control {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  cursor: pointer;
+
+  &:hover .control__mark {
+    border: 1px solid $control;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+  }
+}
+
+.control__label-radio {
+  color: $very-dark-grey;
+}
+
+.control__mark {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+  transform: translateY(3px);
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    transform: translateY(10px);
+  }
+}
+
+.control__input:disabled {
+  opacity: 0.3;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $green;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/check-mark.svg");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

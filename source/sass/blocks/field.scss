@@ -1,0 +1,68 @@
+.field {
+  position: relative;
+}
+
+.field__lable {
+  font-size: 16px;
+  line-height: 18px;
+  color: $medium-grey;
+  text-transform: uppercase;
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.field__input {
+  flex-grow: 1;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $medium-grey;
+  padding: 13px 15px;
+  border: 1px solid $platinum;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 15px;
+  }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $medium-grey;
+    outline-offset: -2px;
+  }
+
+  &:invalid:required {
+    border: 2px solid $status-error;
+  }
+}
+
+.field-icon {
+  position: absolute;
+  right: 20px;
+}
+
+.field-icon--envelope {
+  stroke: $very-dark-grey;
+}
+
+.field-icon--phone {
+  fill: $black;
+}
+
+.field__input:focus + .field-icon--envelope {
+  stroke: $green;
+}
+
+.field__input:invalid + .field-icon--envelope {
+  stroke: $status-error;
+}

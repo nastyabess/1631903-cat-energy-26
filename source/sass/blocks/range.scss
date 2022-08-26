@@ -1,11 +1,31 @@
-.range__scale {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 35px;
+.range-line {
+  fill: $link-icon;
+
+  @media (min-width: $tablet-width) {
+    &--tablet {
+      height: 512px;
+    }
+  }
 }
 
-.range__meaning {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.range-button {
+  stroke: $link-icon;
+}
+
+.range:hover .range-line {
+  fill: $slider-green;
+}
+
+.range:hover .range-button {
+  stroke: $slider-green;
+}
+
+.range:active {
+  opacity: 0.6;
+}
+
+.range {
+  @media (min-width: $tablet-width) {
+    background-size: 4px 512px;
+  }
 }

@@ -1,7 +1,29 @@
+.copyright__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__link {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $medium-grey;
   text-decoration: none;
+
+  & p {
+    margin: 0;
+  }
+
+  &:hover .copyright__link-icon {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-icon {
+  fill: $link-icon;
 }

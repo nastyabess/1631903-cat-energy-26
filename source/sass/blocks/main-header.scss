@@ -11,14 +11,25 @@
 }
 
 .main-header__wrapper {
+  min-width: 280px;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin: auto;
+    padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0 110px;
+    padding-top: 55px;
   }
 }
 
@@ -35,10 +46,27 @@
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/big-cat-licks@2x.jpg");
+      }
     }
   }
 }
 
 .main-header__logo {
   height: 65px;
+  padding-left: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
