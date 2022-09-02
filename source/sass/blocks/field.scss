@@ -22,13 +22,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $medium-grey;
-  padding: 13px 15px;
+  padding: 13px 51px 13px 15px;
   border: 1px solid $platinum;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 15px;
   }
 
   &:hover {

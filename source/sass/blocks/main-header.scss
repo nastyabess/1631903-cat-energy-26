@@ -5,20 +5,27 @@
     width: 50%;
     height: 694px;
     right: 0;
-    background-color: $light-green;
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/big-cat-licks.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/big-cat-licks@2x.jpg");
+    }
   }
 }
 
 .main-header__wrapper {
-  min-width: 280px;
+  max-width: 280px;
+  margin: auto;
+  padding: 0 20px;
   position: relative;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     max-width: 708px;
-    margin: auto;
     padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
@@ -33,40 +40,12 @@
   }
 }
 
-.main-header__wrapper--index {
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      top: 0;
-      right: 0;
-      background-image: url("../img/big-cat-licks.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: -2;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/big-cat-licks@2x.jpg");
-      }
-    }
-  }
-}
-
 .main-header__logo {
-  height: 65px;
-  padding-left: 20px;
-
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
   }
 }
