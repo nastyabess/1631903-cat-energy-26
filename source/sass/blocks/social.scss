@@ -15,17 +15,14 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 4px 4px 8px 4px;
-}
-
-.social__link-icon {
-  fill: $link-icon;
+  color: $link-icon;
 
   &:hover {
-    fill: $green;
+    color: $green;
   }
 
   &:active {
-    fill: $green;
+    color: $green;
     opacity: 0.3;
   }
 }
