@@ -286,6 +286,10 @@
   border: none;
   background-color: transparent;
 
+  &:hover .range {
+    color: $slider-green;
+  }
+
   &:active {
     opacity: 0.6;
   }

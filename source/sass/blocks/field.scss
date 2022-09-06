@@ -51,17 +51,17 @@
 }
 
 .field-icon--envelope {
-  stroke: $very-dark-grey;
+  color: $very-dark-grey;
 }
 
 .field-icon--phone {
-  fill: $black;
+  color: $black;
 }
 
 .field__input:focus + .field-icon--envelope {
-  stroke: $green;
+  color: $green;
 }
 
 .field__input:invalid + .field-icon--envelope {
-  stroke: $status-error;
+  color: $status-error;
 }

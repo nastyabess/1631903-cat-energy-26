@@ -1,31 +1,17 @@
-.range-line {
-  fill: $link-icon;
+.range {
+  color: $link-icon;
 
-  @media (min-width: $tablet-width) {
-    &--tablet {
-      height: 512px;
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
     }
   }
-}
 
-.range-button {
-  stroke: $link-icon;
-}
+  &--tablet {
+    display: none;
 
-.range:hover .range-line {
-  fill: $slider-green;
-}
-
-.range:hover .range-button {
-  stroke: $slider-green;
-}
-
-.range:active {
-  opacity: 0.6;
-}
-
-.range {
-  @media (min-width: $tablet-width) {
-    background-size: 4px 512px;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
