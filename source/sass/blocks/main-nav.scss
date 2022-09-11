@@ -1,6 +1,14 @@
-// .main-nav {
-//   position: relative;
-// }
+.main-nav__wrapper {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
