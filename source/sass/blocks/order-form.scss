@@ -27,6 +27,7 @@
     background-color: $green;
     top: 16px;
     z-index: -1;
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
       top: 22px;

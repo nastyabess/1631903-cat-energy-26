@@ -32,6 +32,10 @@
     @media (min-width: $tablet-width) {
       left: 77px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 85px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -80,7 +84,7 @@
   text-align: center;
   color: $white;
   margin: 0;
-  padding: 5px;
+  padding: 7px;
 
   @media (min-width: $tablet-width) {
     text-align: left;

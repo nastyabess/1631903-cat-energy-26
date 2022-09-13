@@ -2,11 +2,10 @@
   box-sizing: border-box;
   width: 280px;
   margin: auto;
-  padding: 11px 0 14px 0;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    padding: 0 36px 40px 36px;
+    padding: 0 39px 37px 37px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 0 30px 40px 30px;
+    padding: 0 40px 38px 40px;
   }
 }
 
@@ -23,19 +22,22 @@
   display: grid;
   grid-template-columns: 140px 140px;
   margin-bottom: 13px;
+  padding-bottom: 9px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: end;
     height: 391px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
+    padding-bottom: 10px;
   }
 }
 
 .card__image {
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
 
   & img {
     display: block;
@@ -44,7 +46,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,16 +62,16 @@
   color: $very-dark-grey;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 11px;
   padding-right: 65px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 21px;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-bottom: 15px;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,12 +85,8 @@
   grid-template-columns: 1fr 1fr;
   margin: 0;
 
-  & dd {
-    margin: 0;
-  }
-
   @media (min-width: $tablet-width) {
-    row-gap: 14px;
+    row-gap: 7px;
   }
 }
 
@@ -96,9 +95,12 @@
   font-size: 12px;
   line-height: 16px;
   color: $medium-grey;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $special-grey;
   }
 }
 
@@ -108,9 +110,12 @@
   line-height: 16px;
   color: $medium-grey;
   text-align: right;
+  margin: 0;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    border-bottom: 1px solid $special-grey;
   }
 }
 
@@ -118,12 +123,11 @@
   box-sizing: border-box;
   width: 280px;
   margin: auto;
-  padding-bottom: 14px;
   text-align: center;
-  padding-top: 78px;
-  background-image: url("../../img/plus.svg");
+  padding-top: 58px;
+  background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
-  background-position: top 20px center;
+  background-position: top 5px center;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -131,7 +135,7 @@
     flex-direction: column;
     justify-content: end;
     margin-top: 80px;
-    padding: 152px 36px 38px 36px;
+    padding: 161px 36px 36px 36px;
     border: 2px solid $very-light-gray;
     background-image: url("../../img/plus-tablet.svg");
     background-position: top 52px center;
@@ -139,7 +143,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 152px 38px 40px 38px;
+    padding: 157px 38px 40px 38px;
   }
 }
 
@@ -168,12 +172,17 @@
   @media (min-width: $tablet-width) {
     line-height: 18px;
     margin-bottom: 87px;
+    padding: 0 20px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
 
 .card__button {
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .card__button--more {

@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -242,65 +246,69 @@
         </ul>
       </div>
     </section>
-    <section class="additional-products container">
-      <h2 class="additional-products__title">Дополнительные товары</h2>
-      <div class="additional-products__container">
-        <div class="additional-products__wrapper">
-          <ul class="additional-products__list">
-            <li class="additional-products__item additional-card">
-              <div class="additional-card__container">
-                <div class="additional-card__wrapper">
-                  <h3 class="additional-card__title">Сахарозаменитель</h3>
-                  <dl class="additional-card__list">
-                    <dt class="additional-card__value">1 упаковка (100 г)</dt>
-                    <dd class="additional-card__description">200 Р.</dd>
-                  </dl>
-                </div>
-                <a class="additional-card__button button button-primary" href="form.html">заказать</a>
-              </div>
-            </li>
-            <li class="additional-products__item additional-card">
-              <div class="additional-card__container">
-                <div class="additional-card__wrapper">
-                  <h3 class="additional-card__title">питьевая вода</h3>
-                  <dl class="additional-card__list">
-                    <dt class="additional-card__value">5 литров</dt>
-                    <dd class="additional-card__description">50 Р.</dd>
-                  </dl>
-                </div>
-                <a class="additional-card__button button button-primary" href="form.html">заказать</a>
-              </div>
-            </li>
-            <li class="additional-products__item additional-card">
-              <div class="additional-card__container">
-                <div class="additional-card__wrapper">
-                  <h3 class="additional-card__title">молоко</h3>
-                  <dl class="additional-card__list">
-                    <dt class="additional-card__value">1 литр</dt>
-                    <dd class="additional-card__description">100 Р.</dd>
-                  </dl>
-                </div>
-                <a class="additional-card__button button button-primary" href="form.html">заказать</a>
-              </div>
-            </li>
-            <li class="additional-products__item additional-card">
-              <div class="additional-card__container">
-                <div class="additional-card__wrapper">
-                  <h3 class="additional-card__title">витамины</h3>
-                  <dl class="additional-card__list">
-                    <dt class="additional-card__value">1 упаковка (30 г)</dt>
-                    <dd class="additional-card__description">300 Р.</dd>
-                  </dl>
-                </div>
-                <a class="additional-card__button button button-primary" href="form.html">заказать</a>
-              </div>
-            </li>
-          </ul>
+    <section class="additional-products additional-products--line">
+      <div class="additional-products__line-wrapper">
+        <div class="additional-products__title-wrapper">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
         </div>
-        <div class="promo">
-          <div class="promo__wrapper">
-            <div class="promo__text-wrapper">
-              <p class="promo__text">Закажите все <br> и получите чехол для кота в подарок!</p>
+        <div class="additional-products__container">
+          <div class="additional-products__wrapper">
+            <ul class="additional-products__list">
+              <li class="additional-products__item additional-card">
+                <div class="additional-card__container">
+                  <div class="additional-card__wrapper">
+                    <h3 class="additional-card__title">Сахарозаменитель</h3>
+                    <dl class="additional-card__list">
+                      <dt class="additional-card__value">1 упаковка (100 г)</dt>
+                      <dd class="additional-card__description">200 Р.</dd>
+                    </dl>
+                  </div>
+                  <a class="additional-card__button button button-primary" href="form.html">заказать</a>
+                </div>
+              </li>
+              <li class="additional-products__item additional-card">
+                <div class="additional-card__container">
+                  <div class="additional-card__wrapper">
+                    <h3 class="additional-card__title">питьевая вода</h3>
+                    <dl class="additional-card__list">
+                      <dt class="additional-card__value">5 литров</dt>
+                      <dd class="additional-card__description">50 Р.</dd>
+                    </dl>
+                  </div>
+                  <a class="additional-card__button button button-primary" href="form.html">заказать</a>
+                </div>
+              </li>
+              <li class="additional-products__item additional-card">
+                <div class="additional-card__container">
+                  <div class="additional-card__wrapper">
+                    <h3 class="additional-card__title">молоко</h3>
+                    <dl class="additional-card__list">
+                      <dt class="additional-card__value">1 литр</dt>
+                      <dd class="additional-card__description">100 Р.</dd>
+                    </dl>
+                  </div>
+                  <a class="additional-card__button button button-primary" href="form.html">заказать</a>
+                </div>
+              </li>
+              <li class="additional-products__item additional-card">
+                <div class="additional-card__container">
+                  <div class="additional-card__wrapper">
+                    <h3 class="additional-card__title">витамины</h3>
+                    <dl class="additional-card__list">
+                      <dt class="additional-card__value">1 упаковка (30 г)</dt>
+                      <dd class="additional-card__description">300 Р.</dd>
+                    </dl>
+                  </div>
+                  <a class="additional-card__button button button-primary" href="form.html">заказать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="promo">
+            <div class="promo__wrapper">
+              <div class="promo__text-wrapper">
+                <p class="promo__text">Закажите все <br> и получите чехол для кота в подарок!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -364,7 +372,7 @@
       </div>
     </div>
   </footer>
-  <script src="../js/script.js"></script>
+  <script src="../js/script.js" async></script>
 </body>
 
 </html>
