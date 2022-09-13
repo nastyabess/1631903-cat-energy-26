@@ -3,7 +3,7 @@
     max-width: 1220px;
     padding: 0 110px;
     margin: auto;
-    margin-bottom: 69px;
+    margin-bottom: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -13,9 +13,9 @@
 .order-form__group {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 0;
-  padding-bottom: 27px;
+  padding-bottom: 16px;
   border: none;
   border-bottom: 1px solid $ashgray;
 
@@ -27,9 +27,10 @@
     background-color: $green;
     top: 16px;
     z-index: -1;
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
-      top: 25px;
+      top: 22px;
       left: 0;
     }
   }
@@ -37,6 +38,7 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-bottom: 0;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,8 +66,12 @@
 
   @media (min-width: $tablet-width) {
     max-width: 590px;
-    margin-bottom: 76px;
+    margin-bottom: 72px;
     margin-left: -40px;
+
+    &--add {
+      margin-bottom: 53px;
+    }
   }
 }
 
@@ -128,11 +134,6 @@
   padding-bottom: 0;
   border-bottom: none;
 
-  & textarea {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
@@ -147,11 +148,11 @@
   border-bottom: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 61px;
+    margin-bottom: 56px;
   }
 }
 
@@ -181,7 +182,7 @@
 }
 
 .order-form__item {
-  padding: 7px 0;
+  padding: 6px 0;
 
   &:focus-within {
     outline: 2px solid $medium-grey;
@@ -191,7 +192,7 @@
 
 .order-form__checkbox {
   display: grid;
-  row-gap: 13px;
+  row-gap: 12px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 221px 221px;
@@ -205,25 +206,11 @@
   }
 }
 
-.comment-field {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $medium-grey;
-  padding: 12px;
-  border: 1px solid $platinum;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
 .order-form__button-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -243,7 +230,7 @@
   width: 280px;
   font-size: 16px;
   line-height: 20px;
-  padding: 7px 0;
+  padding: 9px 0;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -262,4 +249,8 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -54,6 +58,9 @@
         </div>
         <div class="index-image">
           <picture>
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/can-desktop.webp 1x, img/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/can-tablet.webp 1x, img/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/can-mobile.webp 1x, img/can-mobile@2x.webp 2x">
             <source media="(min-width: 1220px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/can-tablet.png 1x, img/can-tablet@2x.png 2x">
             <img src="img/can-mobile.png" width="280" height="270" srcset="img/can-mobile@2x.png 2x" alt="">
@@ -103,16 +110,16 @@
         <div class="example__info">
           <div class="example__facts">
             <h2 class="example__title example__title-intro">Живой пример</h2>
-            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-&nbsp;прежнему спит по 16 часов в день.</p>
             <div class="example__wrapper-list">
               <dl class="example__list">
                 <div class="example__item">
                   <dt class="example__number">5 КГ</dt>
-                  <dd class="example__description"><span>снижение веса</span></dd>
+                  <dd class="example__description"><span class="example__description-text">снижение веса</span></dd>
                 </div>
                 <div class="example__item">
                   <dt class="example__number">60 ДНЕЙ</dt>
-                  <dd class="example__description"><span>затрачено времени</span></dd>
+                  <dd class="example__description"><span class="example__description-text">затрачено времени</span></dd>
                 </div>
               </dl>
               <div class="example__additionally">
@@ -127,18 +134,18 @@
             <div class="example__foto">
               <div class="example__foto-view example__foto-before">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
-                  <img src="img/cat-before-mobile.png" width="280" height="256" srcset="img/cat-before-mobile@2x.png 2x" alt="Фото кота до похудения">
+                  <source type="image/webp" media="(min-width: 768px)" loading="lazy" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                  <source type="image/webp" loading="lazy" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" loading="lazy" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+                  <img src="img/cat-before-mobile.png" loading="lazy" width="280" height="256" srcset="img/cat-before-mobile@2x.png 2x" alt="Фото кота до похудения">
                 </picture>
               </div>
               <div class="example__foto-view example__foto-after">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
-                  <img src="img/cat-after-mobile.png" width="280" height="256" srcset="img/cat-after-mobile@2x.png 2x" alt="Фото кота после похудения">
+                  <source type="image/webp" media="(min-width: 768px)" loading="lazy" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                  <source type="image/webp" loading="lazy" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" loading="lazy" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+                  <img src="img/cat-after-mobile.png" loading="lazy" width="280" height="256" srcset="img/cat-after-mobile@2x.png 2x" alt="Фото кота после похудения">
                 </picture>
               </div>
             </div>
@@ -159,14 +166,14 @@
       <h2 class="visually-hidden">Сотрудничество</h2>
       <div class="cooperation__wrapper container">
         <div class="cooperation__invite">
-          <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="cooperation__title">приглашаем <br> к сотрудничеству дилеров!</h3>
           <div class="cooperation__text">
             <p>ул. Большая Конюшенная, д. 19/8</p>
             <p>Санкт-Петербург</p>
           </div>
         </div>
       </div>
-      <iframe class="cooperation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660300114910!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="cooperation__map" title="map" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660300114910!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="main-footer">
@@ -214,7 +221,7 @@
     </div>
   </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js" async></script>
 </body>
 
 </html>

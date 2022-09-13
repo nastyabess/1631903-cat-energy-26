@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 425px;
+    width: 405px;
     margin-left: 110px;
     padding: 56px 80px;
     background-color: $white;
@@ -83,7 +83,7 @@
   display: block;
   width: 100%;
   border: none;
-  background-image: url("../img/map.svg");
+  background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

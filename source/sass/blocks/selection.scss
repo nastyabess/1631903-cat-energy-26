@@ -92,7 +92,7 @@
       width: 268px;
       height: 200px;
       background-image: url("../img/black-panther-tablet.svg");
-      top: 50%;
+      top: 53%;
       left: 412px;
       transform: translateY(-50%);
     }
@@ -108,11 +108,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 327px 53px 55px;
+    padding: 77px 327px 53px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 58px 52px;
   }
 }
 
@@ -128,13 +128,13 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
-    padding-left: 200px;
+    padding-left: 163px;
   }
 }
 
@@ -147,6 +147,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 24px;
   }
 }
 

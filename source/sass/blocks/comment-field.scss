@@ -1,0 +1,18 @@
+.comment-field {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $medium-grey;
+  padding: 12px;
+  padding-bottom: 47px;
+  border: 1px solid $platinum;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 11px;
+  }
+}
