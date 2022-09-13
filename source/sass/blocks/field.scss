@@ -23,13 +23,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $medium-grey;
-  padding: 13px 51px 13px 15px;
+  padding: 13px 15px 13px 15px;
   border: 1px solid $platinum;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 51px 10px 18px;
+    padding: 10px 18px 10px 18px;
   }
 
   &:hover {
@@ -44,6 +44,10 @@
 
   &:invalid:required {
     border: 2px solid $status-error;
+  }
+
+  &--icon {
+    padding-right: 51px;
   }
 }
 
