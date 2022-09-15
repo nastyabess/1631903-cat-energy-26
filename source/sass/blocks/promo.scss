@@ -13,6 +13,8 @@
 
 .promo__wrapper {
   position: relative;
+  display: flex;
+  align-items: flex-end;
   min-height: 290px;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-in-backpack.png");
   background-size: cover;
@@ -39,6 +41,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    align-items: center;
     min-height: 200px;
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-in-backpack-tablet.png");
 
@@ -49,6 +53,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 288px;
+    align-items: flex-end;
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-in-backpack.png");
 
     @media (min-resolution: 2dppx) {
@@ -57,25 +62,25 @@
   }
 }
 
-.promo__text-wrapper {
-  width: 200px;
-  position: absolute;
-  left: 50%;
-  bottom: 38px;
-  transform: translateX(-50%);
+// .promo__text-wrapper {
+//   width: 200px;
+//   position: absolute;
+//   left: 50%;
+//   bottom: 38px;
+//   transform: translateX(-50%);
 
-  @media (min-width: $tablet-width) {
-    left: 422px;
-    bottom: 50%;
-    transform: translateY(50%);
-  }
+//   @media (min-width: $tablet-width) {
+//     left: 422px;
+//     bottom: 50%;
+//     transform: translateY(50%);
+//   }
 
-  @media (min-width: $desktop-width) {
-    left: 50%;
-    bottom: 42px;
-    transform: translateX(-50%);
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     left: 50%;
+//     bottom: 42px;
+//     transform: translateX(-50%);
+//   }
+// }
 
 .promo__text {
   font-family: "Arial", sans-serif;
@@ -84,13 +89,16 @@
   text-align: center;
   color: $white;
   margin: 0;
-  padding: 7px;
+  padding: 141px 60px 43px;
 
   @media (min-width: $tablet-width) {
+    max-width: 185px;
     text-align: left;
+    padding: 50px 100px 50px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    padding: 140px 42px 42px;
   }
 }

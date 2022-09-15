@@ -41,6 +41,19 @@
 }
 
 .main-header__logo {
+  width: 192px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &:hover {
     opacity: 0.8;
   }

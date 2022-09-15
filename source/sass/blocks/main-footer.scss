@@ -17,17 +17,10 @@
   }
 }
 
-.main-footer__wrapper-logo {
-  align-self: center;
-  padding: 39px 76px 32px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
 .main-footer__logo {
   display: block;
+  align-self: center;
+  padding: 39px 76px 32px;
 
   &:hover {
     opacity: 0.8;
@@ -35,6 +28,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 

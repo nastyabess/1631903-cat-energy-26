@@ -182,7 +182,16 @@
 
   &:focus-within {
     outline: 2px solid $medium-grey;
-    outline-offset: -2px;
+    outline-offset: 3px;
+  }
+
+  &:focus-within:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $medium-grey;
+    outline-offset: 3px;
   }
 }
 

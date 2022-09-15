@@ -68,7 +68,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    justify-self: end;
+    justify-self: flex-end;
     width: 160px;
     font-size: 16px;
     text-align: right;
