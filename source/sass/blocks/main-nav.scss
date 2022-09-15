@@ -106,6 +106,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 440px;
   }
 
