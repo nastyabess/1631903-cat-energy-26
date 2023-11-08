@@ -1,0 +1,18 @@
+{
+  "short_name": "CatEnergy",
+  "name": "HTML Academy-CatEnergy",
+  "background_color": "$light-gray",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "img/favicons/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/favicons/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
